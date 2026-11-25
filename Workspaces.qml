@@ -32,12 +32,12 @@ Rectangle {
                 height: 16
                 radius: 4
 
-                color: root.activeWorkspaceId === modelData ? "#ffffff" : "#000000"
+                color: root.activeWorkspaceId === modelData ? Theme.textColor : "#000000"
 
                 Text {
                     anchors.centerIn: parent
                     text: rectangle.modelData
-                    color: root.activeWorkspaceId === rectangle.modelData ? "#000000" : "#ffffff"
+                    color: root.activeWorkspaceId === rectangle.modelData ? "#000000" : Theme.textColor
                     font.family: Theme.mapleMono
                     font.pixelSize: 12
                 }

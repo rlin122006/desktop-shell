@@ -8,7 +8,7 @@ ShellRoot {
         model: Quickshell.screens
 
         PanelWindow {
-            id: bar
+            id: panel
 
             anchors {
                 top: true
@@ -24,7 +24,7 @@ ShellRoot {
             Shape {
                 id: notch
 
-                property real cornerRadius: 9
+                property real cornerRadius: 8
 
                 width: row.implicitWidth + cornerRadius * 2
                 height: 28
@@ -46,7 +46,7 @@ ShellRoot {
                     }
 
                     Workspaces {
-                        screen: bar.screen
+                        screen: panel.screen
                     }
 
                     Clock {}
