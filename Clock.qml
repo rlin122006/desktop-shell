@@ -13,7 +13,7 @@ Rectangle {
         color: Theme.textColor
         font.family: Theme.mapleMono
         font.pixelSize: 12
-        text: Qt.formatDateTime(clock.date, "ddd, MMM dd | hh:mm")
+        text: Qt.formatDateTime(clock.date, "ddd MMM dd | hh:mm")
     }
 
     SystemClock {

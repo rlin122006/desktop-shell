@@ -11,15 +11,19 @@ Rectangle {
     readonly property var hyprlandMonitor: Hyprland.monitorFor(screen)
     readonly property int activeWorkspaceId: hyprlandMonitor?.activeWorkspace?.id ?? -1
 
-    implicitWidth: row.implicitWidth + 16
-    implicitHeight: parent.implicitHeight
+    anchors {
+        verticalCenter: parent.verticalCenter
+    }
 
-    color: "#000000"
+    implicitWidth: row.implicitWidth + 4
+    implicitHeight: 24
+
+    color: "transparent"
 
     Row {
         id: row
         anchors.centerIn: parent
-        spacing: 4
+        spacing: 2
 
         Repeater {
             model: [1, 2, 3, 4]
@@ -28,16 +32,16 @@ Rectangle {
                 id: rectangle
                 required property int modelData
 
-                width: 16
+                width: 24
                 height: 16
-                radius: 4
+                radius: 8
 
-                color: root.activeWorkspaceId === modelData ? Theme.textColor : "#000000"
+                color: root.activeWorkspaceId === modelData ? Theme.textColor : "transparent"
 
                 Text {
                     anchors.centerIn: parent
                     text: rectangle.modelData
-                    color: root.activeWorkspaceId === rectangle.modelData ? "#000000" : Theme.textColor
+                    color: root.activeWorkspaceId === rectangle.modelData ? Theme.blackColor : Theme.textColor
                     font.family: Theme.mapleMono
                     font.pixelSize: 12
                 }

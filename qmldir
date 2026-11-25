@@ -1,3 +1,4 @@
 singleton Theme 1.0 Theme.qml
 Clock 1.0 Clock.qml
 Workspaces 1.0 Workspaces.qml
+Logo 1.0 Logo.qml
