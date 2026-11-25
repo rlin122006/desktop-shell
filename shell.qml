@@ -25,6 +25,7 @@ ShellRoot {
                 id: notch
 
                 property real cornerRadius: 9
+                implicitHeight: 28
 
                 anchors {
                     top: parent.top
@@ -35,7 +36,17 @@ ShellRoot {
                     rightMargin: 600 - cornerRadius
                 }
 
-                height: 28
+                Row {
+                    anchors {
+                        verticalCenter: parent.verticalCenter
+                        left: parent.left
+                        leftMargin: 18
+                        right: parent.right
+                        rightMargin: 18
+                    }
+
+                    Clock {}
+                }
 
                 ShapePath {
                     fillColor: "#000000"
