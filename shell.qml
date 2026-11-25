@@ -32,6 +32,7 @@ ShellRoot {
 
                 Row {
                     id: leftRow
+                    spacing: 12
 
                     anchors {
                         verticalCenter: parent.verticalCenter
@@ -48,12 +49,15 @@ ShellRoot {
 
                 Row {
                     id: rightRow
+                    spacing: 24
 
                     anchors {
                         verticalCenter: parent.verticalCenter
                         right: parent.right
-                        rightMargin: 8
+                        rightMargin: 12
                     }
+
+                    Connection {}
 
                     Clock {}
                 }

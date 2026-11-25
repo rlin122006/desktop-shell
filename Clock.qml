@@ -3,7 +3,7 @@ import QtQuick
 
 Rectangle {
     implicitHeight: clockText.implicitHeight
-    implicitWidth: clockText.implicitWidth + 16
+    implicitWidth: clockText.implicitWidth
 
     color: "transparent"
 

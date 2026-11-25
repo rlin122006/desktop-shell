@@ -15,7 +15,7 @@ Rectangle {
         verticalCenter: parent.verticalCenter
     }
 
-    implicitWidth: row.implicitWidth + 4
+    implicitWidth: row.implicitWidth
     implicitHeight: 24
 
     color: "transparent"
