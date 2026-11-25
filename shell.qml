@@ -25,24 +25,28 @@ ShellRoot {
                 id: notch
 
                 property real cornerRadius: 9
-                implicitHeight: 28
+
+                width: row.implicitWidth + cornerRadius * 2
+                height: 28
 
                 anchors {
                     top: parent.top
-                    left: parent.left
-                    right: parent.right
-
-                    leftMargin: 600 - cornerRadius
-                    rightMargin: 600 - cornerRadius
+                    horizontalCenter: parent.horizontalCenter
                 }
 
                 Row {
+                    id: row
+
+                    width: implicitWidth
+
                     anchors {
-                        verticalCenter: parent.verticalCenter
-                        left: parent.left
-                        leftMargin: 18
-                        right: parent.right
-                        rightMargin: 18
+                        top: parent.top
+                        topMargin: 4
+                        horizontalCenter: parent.horizontalCenter
+                    }
+
+                    Workspaces {
+                        screen: bar.screen
                     }
 
                     Clock {}

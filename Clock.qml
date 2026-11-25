@@ -2,12 +2,8 @@ import Quickshell
 import QtQuick
 
 Rectangle {
-    anchors {
-        centerIn: parent
-    }
-
     implicitHeight: clockText.implicitHeight
-    implicitWidth: clockText.implicitWidth
+    implicitWidth: clockText.implicitWidth + 16
 
     color: "transparent"
 
@@ -16,7 +12,8 @@ Rectangle {
         anchors.centerIn: parent
         color: Theme.textColor
         font.family: Theme.mapleMono
-        text: Qt.formatDateTime(clock.date, "ddd, MMM dd   hh:mm")
+        font.pixelSize: 12
+        text: Qt.formatDateTime(clock.date, "hh:mm")
     }
 
     SystemClock {
