@@ -14,8 +14,8 @@ Rectangle {
         anchors.centerIn: parent
         color: Theme.textColor
         font.family: Theme.mapleMono
-        font.pixelSize: 12
-        text: Qt.formatDateTime(clock.date, "ddd MMM dd | hh:mm ")
+        font.pixelSize: 14
+        text: Qt.formatDateTime(clock.date, "hh:mm | ddd MMM dd ")
     }
 
     SystemClock {

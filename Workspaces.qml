@@ -30,9 +30,9 @@ Rectangle {
                 id: rectangle
                 required property int modelData
 
-                width: 24
-                height: 16
-                radius: 8
+                width: 26
+                height: 18
+                radius: 9
 
                 color: root.activeWorkspaceId === modelData ? Theme.textColor : "transparent"
 
@@ -41,7 +41,7 @@ Rectangle {
                     text: rectangle.modelData
                     color: root.activeWorkspaceId === rectangle.modelData ? Theme.blackColor : Theme.textColor
                     font.family: Theme.mapleMono
-                    font.pixelSize: 12
+                    font.pixelSize: 14
                 }
             }
         }
