@@ -3,3 +3,4 @@ Clock 1.0 Clock.qml
 Workspaces 1.0 Workspaces.qml
 Logo 1.0 Logo.qml
 Connection 1.0 Connection.qml
+Battery 1.0 Battery.qml

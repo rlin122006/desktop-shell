@@ -49,13 +49,15 @@ ShellRoot {
 
                 Row {
                     id: rightRow
-                    spacing: 24
+                    spacing: 18
 
                     anchors {
                         verticalCenter: parent.verticalCenter
                         right: parent.right
                         rightMargin: 12
                     }
+
+                    Battery {}
 
                     Connection {}
 

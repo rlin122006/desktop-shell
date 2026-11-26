@@ -9,6 +9,8 @@ Item {
     property string wg1InterfaceStatus: "unknown"
     property string wg2InterfaceStatus: "unknown"
 
+    anchors.verticalCenter: parent.verticalCenter
+
     width: 15
     height: 15
 
@@ -33,7 +35,7 @@ Item {
 
     // check interfaces every 5 seconds
     Timer {
-        interval: 5000
+        interval: 6000
         running: true
         repeat: true
         triggeredOnStart: true

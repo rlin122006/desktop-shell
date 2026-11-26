@@ -11,9 +11,7 @@ Rectangle {
     readonly property var hyprlandMonitor: Hyprland.monitorFor(screen)
     readonly property int activeWorkspaceId: hyprlandMonitor?.activeWorkspace?.id ?? -1
 
-    anchors {
-        verticalCenter: parent.verticalCenter
-    }
+    anchors.verticalCenter: parent.verticalCenter
 
     implicitWidth: row.implicitWidth
     implicitHeight: 24
@@ -23,7 +21,7 @@ Rectangle {
     Row {
         id: row
         anchors.centerIn: parent
-        spacing: 2
+        spacing: 0
 
         Repeater {
             model: [1, 2, 3, 4]

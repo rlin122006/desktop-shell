@@ -5,6 +5,8 @@ Rectangle {
     implicitHeight: clockText.implicitHeight
     implicitWidth: clockText.implicitWidth
 
+    anchors.verticalCenter: parent.verticalCenter
+
     color: "transparent"
 
     Text {
