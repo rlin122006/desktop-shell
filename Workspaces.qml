@@ -14,23 +14,23 @@ Rectangle {
     anchors.verticalCenter: parent.verticalCenter
 
     implicitWidth: row.implicitWidth
-    implicitHeight: 24
+    implicitHeight: 32
 
     color: "transparent"
 
     Row {
         id: row
         anchors.centerIn: parent
-        spacing: 0
+        spacing: 4
 
         Repeater {
-            model: [1, 2, 3, 4]
+            model: [1, 2, 3, 4, 5, 6, 7, 8, 9]
 
             delegate: Rectangle {
                 id: rectangle
                 required property int modelData
 
-                width: 26
+                width: 27
                 height: 18
                 radius: 9
 

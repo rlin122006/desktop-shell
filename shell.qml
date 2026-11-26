@@ -32,7 +32,7 @@ ShellRoot {
 
                 Row {
                     id: leftRow
-                    spacing: 9
+                    spacing: 4
 
                     anchors {
                         verticalCenter: parent.verticalCenter
@@ -49,13 +49,15 @@ ShellRoot {
 
                 Row {
                     id: rightRow
-                    spacing: 18
+                    spacing: 16
 
                     anchors {
                         verticalCenter: parent.verticalCenter
                         right: parent.right
                         rightMargin: 0
                     }
+
+                    SystemTray {}
 
                     Battery {}
 

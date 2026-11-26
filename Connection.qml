@@ -11,8 +11,8 @@ Item {
 
     anchors.verticalCenter: parent.verticalCenter
 
-    width: 15
-    height: 15
+    width: 16
+    height: 16
 
     Image {
         id: wifiIcon
