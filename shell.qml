@@ -16,7 +16,7 @@ ShellRoot {
             }
 
             implicitWidth: Screen.width
-            implicitHeight: 24
+            implicitHeight: 32
 
             color: "transparent"
 
@@ -32,12 +32,12 @@ ShellRoot {
 
                 Row {
                     id: leftRow
-                    spacing: 12
+                    spacing: 8
 
                     anchors {
                         verticalCenter: parent.verticalCenter
                         left: parent.left
-                        leftMargin: 4
+                        leftMargin: 6
                     }
 
                     Logo {}

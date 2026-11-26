@@ -2,8 +2,8 @@ import QtQuick
 
 Image {
     source: "./Assets/nixos-logomark.svg"
-    width: 32
-    height: 32
+    width: 36
+    height: 36
 
     anchors.verticalCenter: parent.verticalCenter
 
