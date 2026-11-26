@@ -26,18 +26,18 @@ ShellRoot {
                 width: parent.width
                 height: parent.height
 
-                color: "#54101010"
+                color: "transparent"
 
                 anchors.centerIn: parent
 
                 Row {
                     id: leftRow
-                    spacing: 8
+                    spacing: 9
 
                     anchors {
                         verticalCenter: parent.verticalCenter
                         left: parent.left
-                        leftMargin: 6
+                        leftMargin: 0
                     }
 
                     Logo {}
@@ -54,7 +54,7 @@ ShellRoot {
                     anchors {
                         verticalCenter: parent.verticalCenter
                         right: parent.right
-                        rightMargin: 12
+                        rightMargin: 0
                     }
 
                     Battery {}
