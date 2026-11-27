@@ -47,6 +47,8 @@ ShellRoot {
                     }
                 }
 
+                Mpris {}
+
                 Row {
                     id: rightRow
                     spacing: 16

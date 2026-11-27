@@ -6,3 +6,4 @@ Connection 1.0 Connection.qml
 Battery 1.0 Battery.qml
 SystemTray 1.0 SystemTray.qml
 Sound 1.0 Sound.qml
+Mpris 1.0 Mpris.qml
