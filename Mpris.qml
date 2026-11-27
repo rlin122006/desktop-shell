@@ -50,16 +50,26 @@ Shape {
                     readonly property real speed: 32 // pixels per second
                     property real scrollX: 0
 
-                    function sync() {
+                    function reset() {
                         scrollAnim.stop();
                         scrollX = 0;
+                    }
+
+                    function sync() {
+                        reset();
                         if (overflowing)
                             scrollAnim.start();
                     }
 
-                    onFullTextChanged: sync()
-                    onWidthChanged: sync()
-                    Component.onCompleted: sync()
+                    Timer {
+                        id: syncTimer
+                        interval: 50
+                        onTriggered: marquee.sync()
+                    }
+
+                    onFullTextChanged: { reset(); syncTimer.restart(); }
+                    onWidthChanged: { reset(); syncTimer.restart(); }
+                    Component.onCompleted: syncTimer.restart()
 
                     SequentialAnimation {
                         id: scrollAnim
@@ -88,7 +98,7 @@ Shape {
                         font.family: Theme.mapleMono
                         font.pixelSize: 12
                         text: marquee.fullText
-                        onImplicitWidthChanged: marquee.sync()
+                        onImplicitWidthChanged: { marquee.reset(); syncTimer.restart(); }
                     }
                 }
 
