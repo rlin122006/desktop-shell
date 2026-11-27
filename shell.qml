@@ -59,6 +59,8 @@ ShellRoot {
 
                     SystemTray {}
 
+                    Sound {}
+
                     Battery {}
 
                     Connection {}
