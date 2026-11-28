@@ -75,7 +75,7 @@ Shape {
                         id: scrollAnim
                         loops: Animation.Infinite
 
-                        PauseAnimation { duration: 1000 } // rest at the start
+                        PauseAnimation { duration: 1500 } // rest at the start
 
                         NumberAnimation {
                             target: marquee
@@ -86,7 +86,7 @@ Shape {
                             easing.type: Easing.Linear
                         }
 
-                        PauseAnimation { duration: 1000 }   // rest at the end
+                        PauseAnimation { duration: 1500 }   // rest at the end
 
                         ScriptAction { script: marquee.scrollX = 0 }   // snap back
                     }
